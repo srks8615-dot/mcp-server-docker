@@ -2,7 +2,22 @@
 
 An MCP server for managing Docker with natural language!
 
-## 🪩 What can it do?
+## 🪩 What can it do?{
+  "mcpServers": {
+    "mcp-server-docker": {
+      "command": "uv",
+      "env": {
+        "MCP_SERVER_DOCKER_SECRET_openai_api_key": "oai-abcdef1234567890"
+      },
+      "args": [
+        "--directory",
+        "/path/to/repo",
+        "run",
+        "mcp-server-docker"
+      ]
+    }
+  }
+}
 
 - 🚀 Compose containers with natural language
 - 🔍 Introspect & debug running containers
